@@ -1,0 +1,44 @@
+body{
+  background-color: #F7ECDE;
+}
+.hha::after{
+  content: "";
+  position: absolute;
+  height: 25%;
+  width: 15%;
+  left: 42.4%;
+  bottom: 8px;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.hha:hover:after{
+  height: 53%;
+}
+.bookdot{
+  border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.bookdot h3{
+  font-size: 25px;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btnap{
+  left: 42%;
+}
+.sa input{
+  width: 20%;
+}
+#total{
+  background-color: #c30808;
+  padding: 7px 4px;
+  color: white;
+  border-radius: 10px;
+}
+#total::before{
+  content: 'Total: ';
+}

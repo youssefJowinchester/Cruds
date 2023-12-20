@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="position-relative mt-5">
+        <h1 class="hha text-center">Bookmarker</h1>
+      </div>
+      <div class="container m-auto py-5 bookdot position-relative">
+        <h3 class="text-center">Bookmark your favorite sites</h3>
+        <label for="pName">Product Name</label>
+        <input class="form-control mb-4" type="text" id="pName" />
+        <div class="d-flex justify-content-evenly sa mb-4">
+          <label for="Price">Price</label>
+          <input
+            onkeyup="getTotal()"
+            class="form-control"
+            type="number"
+            id="Price"
+          />
+          <label for="Taxes">Taxes</label>
+          <input
+            onkeyup="getTotal()"
+            class="form-control"
+            type="number"
+            id="Taxes"
+          />
+          <label for="ADS">ADS</label>
+          <input
+            onkeyup="getTotal()"
+            class="form-control"
+            type="number"
+            id="ADS"
+          />
+          <label for="discount">discount</label>
+          <input
+            onkeyup="getTotal()"
+            class="form-control"
+            type="number"
+            id="discount"
+          />
+          <small id="total"></small>
+        </div>
+        <label for="pCategory">Product Category</label>
+        <input class="form-control mb-4" type="text" id="pCategory" />
+        <label for="SiteURL">Site URL</label>
+        <input class="form-control mb-4" type="text" id="SiteURL" />
+        <label id="count1" for="count">count</label>
+        <input class="form-control mb-4" type="number" id="count" />
+        <button id="submit" class="btnap btn btn-danger position-absolute">
+          Add Product
+        </button>
+      </div>
+      <div class="container">
+        <table class="table table-striped text-center">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Price</th>
+              <th>Taxes</th>
+              <th>ADS</th>
+              <th>discount</th>
+              <th>Total price</th>
+              <th>Product Category</th>
+              <th>visit</th>
+              <th>update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- <tr>
+              <td>Product Name</td>
+              <td>Product Price</td>
+              <td>Taxes</td>
+              <td>ADS</td>
+              <td>discount</td>
+              <td>Total price</td>
+              <td>Product Category</td>
+              <td><button class="btn btn-success">visit</button></td>
+              <td><button class="btn btn-warning">update</button></td>
+              <td><button class="btn btn-danger">Delete</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
